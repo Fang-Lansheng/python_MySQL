@@ -1,4 +1,5 @@
 # python_MySQL
+
 Python 操作 MySQL 数据库
 ###### 课程地址：[Python操作MySQL数据库](https://www.imooc.com/learn/475)
 `2018年10月20日` `Python` `MySQL`  
@@ -6,7 +7,7 @@ Python 操作 MySQL 数据库
 
 ## 课程介绍
 
-![1540031816021](C:\Users\Thistledown\AppData\Roaming\Typora\typora-user-images\1540031816021.png)
+![](https://ws1.sinaimg.cn/large/006y42ybly1fwf1q63gvvj30ln0gqjul.jpg)
 
 **课程目标：**
 
@@ -33,7 +34,7 @@ Python 操作 MySQL 数据库
 
   - 官方说明文档：https://www.python.org/dev/peps/pep-0249/
 
-    ![1540032521506](C:\Users\Thistledown\AppData\Roaming\Typora\typora-user-images\1540032521506.png)
+    ![](https://ws1.sinaimg.cn/large/006y42ybly1fwf1qgs6h0j30w50dldk5.jpg)
 
   - 包含内容：
 
@@ -45,3 +46,29 @@ Python 操作 MySQL 数据库
 
 ### 二、Python 开发 MySQL 环境
 
+![](https://ws1.sinaimg.cn/large/006y42ybly1fwf1pdpd4tj30qx0f543i.jpg)
+
+
+
+Python connector 的安装：
+
+> MySQLdb下载地址：https://sourceforge.net/projects/mysql-python/
+
+Python 3 中不支持 MySQLdb，可以用 PyMySQL代替。
+
+命令行中：
+
+```powershell
+pip install PyMySQL
+```
+
+在项目中的 `__init_.py` 文件中添加：
+
+```python
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+就可以成功 `import MySQLdb` 了。其他的方法与 MySQLdb 一样。
+
+使用 MySQL 自带的 MySQL Workbench 进行管理
