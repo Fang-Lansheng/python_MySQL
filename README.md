@@ -200,3 +200,14 @@ connect.close()     # 关闭连接
 
 ![](https://ws1.sinaimg.cn/large/006y42ybly1fwg5s3xyqaj30tz0gmq6g.jpg)
 
+## 课程总结
+
+- **Python DB API**
+  - connection：建立数据库连接
+  - cursor：执行 SQL、获取数据
+- **开发数据库程序流程**
+  - 创建 connection 对象，获取 cursor
+  - 使用 cursor 执行 SQL
+  - 使用 cursor 获取数据、判断执行状态
+  - 提交事务 或者 回滚事务
+  - 关闭 cursor、关闭 connection
